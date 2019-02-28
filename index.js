@@ -21,16 +21,16 @@ module.exports = {
         "sonarjs",
         "lodash",
         "chai-expect",
-        "import"
+        //"import"
     ],
     "extends": [
         "airbnb-base",
         "plugin:unicorn/recommended",
         "plugin:sonarjs/recommended",
         "plugin:lodash/recommended",
-        "plugin:import/errors",
-        "plugin:import/warnings",
-        "plugin:import/typescript",
+        //"plugin:import/errors",
+        //"plugin:import/warnings",
+        //"plugin:import/typescript",
         "plugin:node/recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:prettier/recommended",
@@ -60,14 +60,14 @@ module.exports = {
     },
     "overrides": [
         {
-            "files": ["src/**/*.test.ts", "src/**/*.spec.ts", "src/**/*.e2e.ts"],
+            "files": ["**/*.test.ts", "**/*.spec.ts", "**/*.e2e.ts"],
             "rules": {
                 "import/no-extraneous-dependencies": 0,
                 "no-unused-expressions": 0
             }
         },
         {
-            "files": ["src/**/*.e2e.ts"],
+            "files": ["**/*.e2e.ts"],
             "rules": {
                 "global-require": 0,
                 "node/no-missing-require": 0
