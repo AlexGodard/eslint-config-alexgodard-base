@@ -60,7 +60,7 @@ module.exports = {
     },
     "overrides": [
         {
-            "files": ["**/*.test.ts", "**/*.spec.ts", "**/*.e2e.ts"],
+            "files": ["**/*.test.ts", "**/*.spec.ts", "**/*.e2e.ts", "**/test/**/*.ts"],
             "rules": {
                 "import/no-extraneous-dependencies": 0,
                 "no-unused-expressions": 0
