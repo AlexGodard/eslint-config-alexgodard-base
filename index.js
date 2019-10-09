@@ -37,12 +37,17 @@ module.exports = {
         "import/prefer-default-export": 0,
         "import/no-unresolved": 0
     },
+    "globals": {
+        "expect": true,
+        "sinon": true
+    },
     "overrides": [
         {
             "files": ["**/*.test.ts", "**/*.spec.ts", "**/*.e2e.ts", "**/test/**/*.ts"],
             "rules": {
                 "import/no-extraneous-dependencies": 0,
-                "no-unused-expressions": 0
+                "no-unused-expressions": 0,
+                "@typescript-eslint/explicit-function-return-type": 0,
             }
         },
         {
