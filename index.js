@@ -1,7 +1,7 @@
 module.exports = {
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "ecmaVersion": 2019,
+        "ecmaVersion": 2020,
         "sourceType": "module"
     },
     "env": {
@@ -14,16 +14,16 @@ module.exports = {
         "node",
         "sonarjs",
         "lodash",
-        //"import"
+        "import"
     ],
     "extends": [
         "airbnb-base",
         "plugin:unicorn/recommended",
         "plugin:sonarjs/recommended",
         "plugin:lodash/recommended",
-        //"plugin:import/errors",
-        //"plugin:import/warnings",
-        //"plugin:import/typescript",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:import/typescript",
         "plugin:node/recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:prettier/recommended",
