@@ -35,7 +35,9 @@ module.exports = {
         "lodash/prefer-lodash-method": 0,
         "lodash/import-scope": 0,
         "import/prefer-default-export": 0,
-        "import/no-unresolved": 0
+        "import/no-unresolved": 0,
+        "import/extensions": 0,
+        "node/no-missing-import": 0,
     },
     "overrides": [
         {
