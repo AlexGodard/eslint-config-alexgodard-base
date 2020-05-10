@@ -1,6 +1,6 @@
 {
   "name": "@alexgodard/eslint-config-alexgodard",
-  "version": "1.0.6",
+  "version": "2.0.0",
   "description": "Set of eslint rules used in my projects",
   "main": "index.js",
   "author": "Alexandre Godard",

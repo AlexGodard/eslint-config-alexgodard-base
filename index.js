@@ -37,10 +37,6 @@ module.exports = {
         "import/prefer-default-export": 0,
         "import/no-unresolved": 0
     },
-    "globals": {
-        "expect": true,
-        "sinon": true
-    },
     "overrides": [
         {
             "files": ["**/*.test.ts", "**/*.spec.ts", "**/*.e2e.ts", "**/test/**/*.ts"],
