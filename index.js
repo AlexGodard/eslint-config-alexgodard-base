@@ -29,6 +29,7 @@ module.exports = {
         "plugin:prettier/recommended",
     ],
     "rules": {
+        "no-restricted-syntax": ["error", "ForInStatement", "LabeledStatement", "WithStatement"],
         "prettier/prettier": "error",
         "node/no-unsupported-features/es-syntax": 0,
         "lodash/prefer-lodash-method": 0,
