@@ -38,6 +38,12 @@ module.exports = {
         "import/no-unresolved": 0,
         "import/extensions": 0,
         "node/no-missing-import": 0,
+        "no-underscore-dangle": 0,
+        "unicorn/filename-case": 0,
+        "node/no-unpublished-import": 0,
+        "no-process-exit": 0,
+        "unicorn/no-process-exit": 0,
+        "unicorn/prevent-abbreviations": 0,
     },
     "overrides": [
         {
