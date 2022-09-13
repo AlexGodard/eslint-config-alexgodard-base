@@ -17,7 +17,6 @@ module.exports = {
         "import"
     ],
     "extends": [
-        "airbnb-base",
         "plugin:unicorn/recommended",
         "plugin:sonarjs/recommended",
         "plugin:lodash/recommended",
@@ -44,10 +43,11 @@ module.exports = {
         "no-process-exit": 0,
         "unicorn/no-process-exit": 0,
         "unicorn/prevent-abbreviations": 0,
+        "unicorn/prefer-module": 0,
     },
     "overrides": [
         {
-            "files": ["**/*.test.ts", "**/*.spec.ts", "**/*.e2e.ts", "**/test/**/*.ts", "**/*.cy.*", '**/*.config.*'],
+            "files": ["**/*.test.ts", "**/*.spec.ts", "**/*.e2e.ts", "**/test/**/*.ts", "**/*.cy.*", '**/*.config.*', 'cypress/**/*', 'mocks/**/*'],
             "rules": {
                 "import/no-extraneous-dependencies": 0,
                 "no-unused-expressions": 0,
