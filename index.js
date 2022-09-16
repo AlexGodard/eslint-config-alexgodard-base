@@ -4,10 +4,6 @@ module.exports = {
         "ecmaVersion": 2020,
         "sourceType": "module"
     },
-    "env": {
-        "node": true,
-        "es6": true
-    },
     "plugins": [
         "@typescript-eslint",
         "prettier",
