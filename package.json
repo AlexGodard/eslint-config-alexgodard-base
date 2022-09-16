@@ -1,6 +1,6 @@
 {
-  "name": "@alexgodard/eslint-config-alexgodard",
-  "version": "5.0.1",
+  "name": "@alexgodard/eslint-config-alexgodard-base",
+  "version": "1.0.1",
   "description": "Set of eslint rules used in my projects",
   "main": "index.js",
   "author": "Alexandre Godard",
@@ -10,23 +10,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlexGodard/eslint-config-alexgodard.git"
+    "url": "git+https://github.com/AlexGodard/eslint-config-alexgodard-base.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
   "bugs": {
-    "url": "https://github.com/AlexGodard/eslint-config-alexgodard/issues"
+    "url": "https://github.com/AlexGodard/eslint-config-alexgodard-base/issues"
   },
-  "homepage": "https://github.com/AlexGodard/eslint-config-alexgodard#readme",
+  "homepage": "https://github.com/AlexGodard/eslint-config-alexgodard-base#readme",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.36.2",
     "@typescript-eslint/parser": "^5.36.2",
-    "eslint": "8.22.0",
+    "eslint": "^8.23.1",
+    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.5.1",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-lodash": "^7.4.0",
-    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-sonarjs": "^0.15.0",
     "eslint-plugin-unicorn": "^43.0.2",
     "prettier": "^2.7.1"

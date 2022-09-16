@@ -1,36 +1,39 @@
 module.exports = {
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "ecmaVersion": 2020,
+        "ecmaVersion": "latest",
         "sourceType": "module"
     },
     "plugins": [
         "@typescript-eslint",
-        "prettier",
+        "unicorn",
         "node",
         "sonarjs",
         "lodash",
         "import"
     ],
     "extends": [
+        "airbnb-base",
+        "plugin:@typescript-eslint/recommended",
         "plugin:unicorn/recommended",
         "plugin:sonarjs/recommended",
         "plugin:lodash/recommended",
-        "plugin:import/errors",
-        "plugin:import/warnings",
-        "plugin:import/typescript",
+        "plugin:import/recommended",
         "plugin:node/recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:prettier/recommended",
+        "plugin:import/typescript",
+        "prettier",
     ],
+    "env": {
+        "es2022": true
+    },
     "rules": {
         "no-restricted-syntax": ["error", "ForInStatement", "LabeledStatement", "WithStatement"],
-        "prettier/prettier": "error",
         "node/no-unsupported-features/es-syntax": 0,
         "lodash/prefer-lodash-method": 0,
         "lodash/import-scope": 0,
         "import/prefer-default-export": 0,
-        "import/no-unresolved": 0,
+        // turn on errors for missing imports
+        "import/no-unresolved": "error",
         "import/extensions": 0,
         "node/no-missing-import": 0,
         "no-underscore-dangle": 0,
@@ -40,6 +43,7 @@ module.exports = {
         "unicorn/no-process-exit": 0,
         "unicorn/prevent-abbreviations": 0,
         "unicorn/prefer-module": 0,
+        "consistent-return": 0,
     },
     "overrides": [
         {
