@@ -46,6 +46,20 @@ module.exports = {
         "unicorn/prefer-module": 0,
         "unicorn/prevent-abbreviations": 0,
         "unicorn/no-useless-undefined": ["error", {"checkArguments": false}],
+        "no-use-before-define": 0,
+        // No shadow doesn't work with JS files
+        "no-shadow": "off",
+        "@typescript-eslint/no-shadow": "error",
+        "@typescript-eslint/consistent-type-imports": [
+            "error",
+            {
+                "prefer": "type-imports",
+                "disallowTypeAnnotations": false
+            }
+        ],
+        "unicorn/prefer-top-level-await": 1,
+        "sonarjs/no-redundant-jump": 0,
+        "no-useless-return": 0,
     },
     "overrides": [
         {
@@ -61,6 +75,12 @@ module.exports = {
             "rules": {
                 "global-require": 0,
                 "node/no-missing-require": 0
+            }
+        },
+        {
+            "files": ["**/*.d.ts"],
+            "rules": {
+                "@typescript-eslint/ban-types": 0
             }
         }
     ]
