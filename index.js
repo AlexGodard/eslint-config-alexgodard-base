@@ -45,6 +45,7 @@ module.exports = {
         "unicorn/no-process-exit": 0,
         "unicorn/prefer-module": 0,
         "unicorn/prevent-abbreviations": 0,
+        "sonarjs/no-duplicate-string": 0,
         "unicorn/no-useless-undefined": ["error", {"checkArguments": false}],
         "no-use-before-define": 0,
         // No shadow doesn't work with JS files
@@ -60,6 +61,7 @@ module.exports = {
         "unicorn/prefer-top-level-await": 1,
         "sonarjs/no-redundant-jump": 0,
         "no-useless-return": 0,
+        'no-await-in-loop': 0,
     },
     "overrides": [
         {
