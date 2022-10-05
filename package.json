@@ -1,6 +1,6 @@
 {
   "name": "@alexgodard/eslint-config-alexgodard-base",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Set of eslint rules used in my projects",
   "main": "index.js",
   "author": "Alexandre Godard",
@@ -30,7 +30,7 @@
     "eslint-plugin-lodash": "^7.4.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-sonarjs": "^0.15.0",
-    "eslint-plugin-unicorn": "^43.0.2",
+    "eslint-plugin-unicorn": "^44.0.1",
     "prettier": "^2.7.1"
   }
 }
