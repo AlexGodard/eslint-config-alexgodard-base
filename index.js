@@ -4,6 +4,16 @@ module.exports = {
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
+    "settings": {
+        "import/parsers": {
+            "@typescript-eslint/parser": [".ts", ".tsx"]
+        },
+        "import/resolver": {
+            "typescript": {
+                "alwaysTryTypes": true
+            }
+        }
+    },
     "plugins": [
         "@typescript-eslint",
         "unicorn",
