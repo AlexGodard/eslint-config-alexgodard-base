@@ -9,7 +9,6 @@ module.exports = {
         "unicorn",
         "node",
         "sonarjs",
-        "lodash",
         "import"
     ],
     "extends": [
@@ -17,7 +16,6 @@ module.exports = {
         "plugin:@typescript-eslint/recommended",
         "plugin:unicorn/recommended",
         "plugin:sonarjs/recommended",
-        "plugin:lodash/recommended",
         "plugin:import/recommended",
         "plugin:node/recommended",
         "plugin:import/typescript",
@@ -33,10 +31,9 @@ module.exports = {
         "import/no-extraneous-dependencies": 0,
         "import/no-unresolved": "error",
         "import/prefer-default-export": 0,
-        "lodash/import-scope": 0,
-        "lodash/prefer-lodash-method": 0,
         "no-process-exit": 0,
-        "no-restricted-syntax": ["error", "ForInStatement", "LabeledStatement", "WithStatement"],
+        // Allow for in and for of
+        "no-restricted-syntax": ["error", "LabeledStatement", "WithStatement"],
         "no-underscore-dangle": 0,
         "node/no-missing-import": 0,
         "node/no-unpublished-import": 0,
@@ -62,6 +59,14 @@ module.exports = {
         "sonarjs/no-redundant-jump": 0,
         "no-useless-return": 0,
         'no-await-in-loop': 0,
+        // Remix uses this (V2_MetaFunction)
+        'camelcase': 0,
+        // Remix resource routes look better with a small switch (HTTP methods)
+        "sonarjs/no-small-switch": 0,
+        // Remix-blues-stack uses this in their server.ts file
+        "import/no-dynamic-require": 0,
+        // Remix-blues-stack uses this in their server.ts file
+        "global-require": 0,
     },
     "overrides": [
         {
